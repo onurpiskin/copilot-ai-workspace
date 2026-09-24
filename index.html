@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>One workspace. Every team. — The GitHub Copilot app as your company's AI layer</title>
-<meta name="description" content="The GitHub Copilot app is a desktop agent workspace. With MCP servers, plugins, skills, custom agents and canvases, it can become a shared AI layer across an organization. An independent, source-cited point of view." />
+<title>One app in the middle of everything you work with — the GitHub Copilot app</title>
+<meta name="description" content="The GitHub Copilot app is a desktop AI workspace that wires into the tools you already use. Whatever your role, connect your context through MCP, plugins and skills. An independent, source-cited point of view." />
 <meta property="og:title" content="One workspace. Every team." />
-<meta property="og:description" content="Your tools. Your knowledge. Your workflows. One AI workspace." />
+<meta property="og:description" content="Wire the Copilot app to the systems you already use. Whatever your job is, the pattern is the same." />
 <meta property="og:type" content="website" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
 <link rel="stylesheet" href="tokens.css" />
@@ -37,67 +37,186 @@
 <div class="hero" id="top">
   <div class="hero-bg"><div class="glow"></div><div class="grid"></div></div>
   <div class="wrap hero-inner">
-    <div class="hero-grid">
 
-      <div class="hero-copy">
-        <span class="eyebrow"><span class="led"></span> An independent point of view · September 2026</span>
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="led"></span> An independent point of view &middot; September 2026</span>
 
-        <h1 class="display">The AI workspace for <span class="grad-text">how your company works.</span></h1>
+      <h1 class="display">One app in the middle of <span class="grad-text">everything you work with.</span></h1>
 
-        <p class="body-lg">
-          The GitHub Copilot app is a desktop workspace where agents run real tasks against real context.
-          Connect your tools through MCP, package your team's knowledge as skills, and every function gets
-          a place to work with AI in the context of what they actually do.
-        </p>
+      <p class="body-lg">
+        The GitHub Copilot app is a desktop workspace where AI runs real tasks against real context.
+        Wire it to the systems you already use and it stops being a chat window. It doesn&rsquo;t matter
+        what your job title is or which tools you live in. If the work has context, the app can reach it.
+      </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-solid" href="#teams">See it per team</a>
-          <a class="btn btn-line" href="#matrix">What's shipped vs. what you build</a>
-        </div>
-
-        <div class="hero-meta">
-          <div><span class="n">macOS · Windows · Linux</span><span class="l">Desktop app, GA</span></div>
-          <div><span class="n">Every plan</span><span class="l">Free through Enterprise</span></div>
-          <div><span class="n">6 providers</span><span class="l">Model choice, plus BYOK</span></div>
-        </div>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#connect">How the wiring works</a>
+        <a class="btn btn-line" href="#matrix">What&rsquo;s shipped vs. what you build</a>
       </div>
-
-      <div class="stage">
-        <div class="streams" aria-hidden="true">
-          <div class="stream">
-            <span class="tag t-product">Product</span>
-            <p class="q">Turn this week's customer feedback into a feature brief</p>
-          </div>
-          <div class="stream">
-            <span class="tag t-design">Design</span>
-            <p class="q">Review the latest product requirements against our design system</p>
-          </div>
-          <div class="stream">
-            <span class="tag t-sales">Sales</span>
-            <p class="q">Prepare tomorrow's enterprise account brief</p>
-          </div>
-          <div class="stream">
-            <span class="tag t-finance">Finance</span>
-            <p class="q">Analyze this month's spending and flag the outliers</p>
-          </div>
-        </div>
-
-        <div class="core">
-          <div class="core-bar">
-            <i></i><i></i><i></i>
-            <span class="t">Copilot · sessions</span>
-          </div>
-          <div class="core-body">
-            <div class="core-row run"><span class="pip"></span> Fix the authentication issue <span class="who">autopilot</span></div>
-            <div class="core-row run"><span class="pip"></span> Draft the Q3 release notes <span class="who">plan</span></div>
-            <div class="core-row wait"><span class="pip"></span> Triage 42 incoming issues <span class="who">review</span></div>
-            <div class="core-row done"><span class="pip"></span> Summarize the pricing thread <span class="who">done</span></div>
-            <div class="core-row done"><span class="pip"></span> Weekly dependency report <span class="who">automation</span></div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- ---------- connection map ---------- -->
+    <figure class="cmap">
+      <svg class="cmap-svg" viewBox="0 0 1140 660" role="img"
+           aria-labelledby="cmap-t cmap-d" preserveAspectRatio="xMidYMid meet">
+        <title id="cmap-t">The Copilot app connected to the tools around it</title>
+        <desc id="cmap-d">The GitHub Copilot app sits at the centre, wired outward to code and repositories,
+          issues and pull requests, the terminal and local files, the browser, and then through MCP to
+          documentation, chat, mail and calendar, CRM, databases and analytics, design tools, ticketing
+          systems and internal APIs, and cloud and CI/CD.</desc>
+
+        <defs>
+          <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"   stop-color="#5b8cff" stop-opacity=".40" />
+            <stop offset="55%"  stop-color="#7c5cff" stop-opacity=".13" />
+            <stop offset="100%" stop-color="#7c5cff" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="hubFace" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stop-color="#2b3240" />
+            <stop offset="100%" stop-color="#141821" />
+          </linearGradient>
+        </defs>
+
+        <circle cx="570" cy="330" r="250" fill="url(#hubGlow)" />
+        <circle class="orbit" cx="570" cy="330" r="150" />
+        <circle class="orbit faint" cx="570" cy="330" r="206" />
+
+      <path class="wire w-native" d="M570 234 Q604 166 570 98" />
+      <path class="wire w-mcp" d="M618 246.9 Q708.4 205 740 129.1" />
+      <path class="wire w-mcp" d="M653.1 282 Q775.8 277.4 864.4 214" />
+      <path class="wire w-mcp" d="M666 330 Q788 364 910 330" />
+      <path class="wire w-mcp" d="M653.1 378 Q741.8 441.4 864.4 446" />
+      <path class="wire w-mcp" d="M618 413.1 Q649.6 489 740 530.9" />
+      <path class="wire w-mcp" d="M570 426 Q536 494 570 562" />
+      <path class="wire w-mcp" d="M522 413.1 Q431.6 455 400 530.9" />
+      <path class="wire w-mcp" d="M486.9 378 Q364.3 382.6 275.6 446" />
+      <path class="wire w-native" d="M474 330 Q352 296 230 330" />
+      <path class="wire w-native" d="M486.9 282 Q398.3 218.6 275.6 214" />
+      <path class="wire w-native" d="M522 246.9 Q490.4 171 400 129.1" />
+      <circle class="pulse p-native" r="3.4"><animateMotion dur="4.20s" begin="0.00s" repeatCount="indefinite" path="M570 234 Q604 166 570 98" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="4.42s" begin="0.34s" repeatCount="indefinite" path="M618 246.9 Q708.4 205 740 129.1" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="4.64s" begin="0.68s" repeatCount="indefinite" path="M653.1 282 Q775.8 277.4 864.4 214" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="4.86s" begin="1.02s" repeatCount="indefinite" path="M666 330 Q788 364 910 330" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="5.08s" begin="1.36s" repeatCount="indefinite" path="M653.1 378 Q741.8 441.4 864.4 446" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="5.30s" begin="1.70s" repeatCount="indefinite" path="M618 413.1 Q649.6 489 740 530.9" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="5.52s" begin="2.04s" repeatCount="indefinite" path="M570 426 Q536 494 570 562" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="5.74s" begin="2.38s" repeatCount="indefinite" path="M522 413.1 Q431.6 455 400 530.9" /></circle>
+      <circle class="pulse p-mcp" r="3.4"><animateMotion dur="5.96s" begin="2.72s" repeatCount="indefinite" path="M486.9 378 Q364.3 382.6 275.6 446" /></circle>
+      <circle class="pulse p-native" r="3.4"><animateMotion dur="6.18s" begin="3.06s" repeatCount="indefinite" path="M474 330 Q352 296 230 330" /></circle>
+      <circle class="pulse p-native" r="3.4"><animateMotion dur="6.40s" begin="3.40s" repeatCount="indefinite" path="M486.9 282 Q398.3 218.6 275.6 214" /></circle>
+      <circle class="pulse p-native" r="3.4"><animateMotion dur="6.62s" begin="3.74s" repeatCount="indefinite" path="M522 246.9 Q490.4 171 400 129.1" /></circle>
+
+      <g class="chip c-native">
+        <rect x="462" y="42" width="216" height="52" rx="13" />
+        <text class="gl" x="488" y="73" text-anchor="middle">{ }</text>
+        <text class="lb" x="508" y="72.5">Code & repositories</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="688" y="77.1" width="216" height="52" rx="13" />
+        <text class="gl" x="714" y="108.1" text-anchor="middle">¶</text>
+        <text class="lb" x="734" y="107.6">Docs & wikis</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="853.4" y="173" width="216" height="52" rx="13" />
+        <text class="gl" x="879.4" y="204" text-anchor="middle">◌</text>
+        <text class="lb" x="899.4" y="203.5">Chat & messaging</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="914" y="304" width="216" height="52" rx="13" />
+        <text class="gl" x="940" y="335" text-anchor="middle">✉</text>
+        <text class="lb" x="960" y="334.5">Mail & calendar</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="853.4" y="435" width="216" height="52" rx="13" />
+        <text class="gl" x="879.4" y="466" text-anchor="middle">◉</text>
+        <text class="lb" x="899.4" y="465.5">CRM & customer data</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="688" y="530.9" width="216" height="52" rx="13" />
+        <text class="gl" x="714" y="561.9" text-anchor="middle">▤</text>
+        <text class="lb" x="734" y="561.4">Data & analytics</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="462" y="566" width="216" height="52" rx="13" />
+        <text class="gl" x="488" y="597" text-anchor="middle">◭</text>
+        <text class="lb" x="508" y="596.5">Design tools</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="236" y="530.9" width="216" height="52" rx="13" />
+        <text class="gl" x="262" y="561.9" text-anchor="middle">⇄</text>
+        <text class="lb" x="282" y="561.4">Ticketing & APIs</text>
+      </g>
+      <g class="chip c-mcp">
+        <rect x="70.6" y="435" width="216" height="52" rx="13" />
+        <text class="gl" x="96.6" y="466" text-anchor="middle">☁</text>
+        <text class="lb" x="116.6" y="465.5">Cloud & CI/CD</text>
+      </g>
+      <g class="chip c-native">
+        <rect x="10" y="304" width="216" height="52" rx="13" />
+        <text class="gl" x="36" y="335" text-anchor="middle">◍</text>
+        <text class="lb" x="56" y="334.5">Browser & the web</text>
+      </g>
+      <g class="chip c-native">
+        <rect x="70.6" y="173" width="216" height="52" rx="13" />
+        <text class="gl" x="96.6" y="204" text-anchor="middle">>_</text>
+        <text class="lb" x="116.6" y="203.5">Terminal & files</text>
+      </g>
+      <g class="chip c-native">
+        <rect x="236" y="77.1" width="216" height="52" rx="13" />
+        <text class="gl" x="262" y="108.1" text-anchor="middle">◆</text>
+        <text class="lb" x="282" y="107.6">Issues & PRs</text>
+      </g>
+        <g class="hub">
+          <circle class="hub-ring" cx="570" cy="330" r="92" />
+          <circle class="hub-face" cx="570" cy="330" r="80" fill="url(#hubFace)" />
+          <g transform="translate(570 330) scale(3.25) translate(-8 -8)">
+            <path class="hub-mark" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+          </g>
+        </g>
+        <text class="hub-label" x="570" y="452" text-anchor="middle">GitHub Copilot app</text>
+        <text class="hub-sub" x="570" y="472" text-anchor="middle">macOS &middot; Windows &middot; Linux</text>
+      </svg>
+
+      <figcaption class="cmap-key">
+        <span><i class="k k-native"></i> Built in. Works the day you install it.</span>
+        <span><i class="k k-mcp"></i> Connected through MCP. You set the server up.</span>
+      </figcaption>
+
+      <p class="cmap-note">
+        Every label on that ring is a category, not a product. What you plug in depends on where you sit in
+        the company. The app in the middle stays the same.
+      </p>
+
+      <!-- readable equivalent for narrow screens -->
+      <div class="cmap-list">
+        <div class="cl-hub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" /></svg>
+          <div><strong>GitHub Copilot app</strong><span>The workspace in the middle</span></div>
+        </div>
+        <div class="cl-group">
+          <span class="cl-head"><i class="k k-native"></i> Built in</span>
+          <ul>
+            <li>Code &amp; repositories</li><li>Issues &amp; PRs</li>
+            <li>Terminal &amp; files</li><li>Browser &amp; the web</li>
+          </ul>
+        </div>
+        <div class="cl-group">
+          <span class="cl-head"><i class="k k-mcp"></i> Connected through MCP</span>
+          <ul>
+            <li>Docs &amp; wikis</li><li>Chat &amp; messaging</li><li>Mail &amp; calendar</li>
+            <li>CRM &amp; customer data</li><li>Data &amp; analytics</li><li>Design tools</li>
+            <li>Ticketing &amp; APIs</li><li>Cloud &amp; CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </figure>
+
+    <div class="hero-meta">
+      <div><span class="n">Every plan</span><span class="l">Free through Enterprise</span></div>
+      <div><span class="n">6 providers</span><span class="l">Model choice, plus BYOK</span></div>
+      <div><span class="n">Any role</span><span class="l">The wiring decides, not the job title</span></div>
+    </div>
+
   </div>
 </div>
 
@@ -107,9 +226,10 @@
     <div class="mark">⌖</div>
     <p>
       <strong>Read this first.</strong> GitHub positions the Copilot app as “the desktop home for agent-driven
-      development.” It is a developer tool. This page argues something broader: that its extensibility model
-      (MCP, plugins, skills, custom agents, canvases) makes it a credible shared AI layer for a whole company.
-      That argument is ours, not GitHub's. Every capability below is tagged
+      development,” and it ships with developer work wired up on day one. This page argues something broader:
+      that its extensibility model (MCP, plugins, skills, custom agents, canvases) makes it a credible shared
+      AI workspace for anyone in a company, not only the people who write code. That argument is ours, not
+      GitHub's. Every capability below is tagged
       <span class="st st-ga">Generally available</span>
       <span class="st st-prev">Public preview</span>
       <span class="st st-build">You build it</span>
@@ -126,7 +246,8 @@
       <h2 class="h2">AI stopped being a place you ask questions.</h2>
       <p class="body-lg">
         The limit on useful AI was never the model. It was context. An assistant that cannot see your
-        repositories, your tickets, your documents or your data can only ever give you a well-written guess.
+        files, your tickets, your documents or your data can only ever give you a well-written guess.
+        This is true whether you write code for a living or have never opened a terminal.
       </p>
     </div>
 
@@ -154,15 +275,17 @@
 <section class="section invert" id="teams">
   <div class="wrap">
     <div class="section-head rv">
-      <span class="micro">One workspace. Every team.</span>
-      <h2 class="h2">The same platform, approached from five different jobs.</h2>
+      <span class="micro">One workspace. Anyone in it.</span>
+      <h2 class="h2">Same app. Same pattern. Whatever your job is.</h2>
       <p class="body-lg">
-        Engineering gets this out of the box. Everyone else gets it by connecting the systems they already
-        use. Each tab is honest about which is which.
+        Nobody has to write code to get value here. The pattern never changes: give the app context,
+        describe the outcome, review what comes back. The five tabs below are examples, not a list of who
+        is allowed in. Swap in your own systems and the shape of the work stays the same. Each tab is
+        honest about what ships today and what you would connect yourself.
       </p>
     </div>
 
-    <div class="team-tabs" role="tablist" aria-label="Team examples">
+    <div class="team-tabs" role="tablist" aria-label="Examples by kind of work">
       <button class="team-tab" role="tab" aria-selected="true" aria-controls="p-eng" id="t-eng">Engineering</button>
       <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-prod" id="t-prod">Product</button>
       <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-design" id="t-design">Design</button>
