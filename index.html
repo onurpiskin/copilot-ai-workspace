@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>One workspace. Every team. — The GitHub Copilot app as your company's AI layer</title>
+<meta name="description" content="The GitHub Copilot app is a desktop agent workspace. With MCP servers, plugins, skills, custom agents and canvases, it can become a shared AI layer across an organization. An independent, source-cited point of view." />
+<meta property="og:title" content="One workspace. Every team." />
+<meta property="og:description" content="Your tools. Your knowledge. Your workflows. One AI workspace." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="page.css" />
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      One workspace. Every team.
+    </a>
+    <nav class="nav-links">
+      <a href="#shift">The shift</a>
+      <a href="#teams">Every team</a>
+      <a href="#connect">Connect</a>
+      <a href="#agent">Agents</a>
+      <a href="#layer">Your AI layer</a>
+      <a href="#matrix">What's real</a>
+    </nav>
+    <a class="btn btn-solid" href="https://docs.github.com/en/copilot/how-tos/github-copilot-app">Read the docs</a>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<div class="hero" id="top">
+  <div class="hero-bg"><div class="glow"></div><div class="grid"></div></div>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="led"></span> An independent point of view · September 2026</span>
+
+        <h1 class="display">The AI workspace for <span class="grad-text">how your company works.</span></h1>
+
+        <p class="body-lg">
+          The GitHub Copilot app is a desktop workspace where agents run real tasks against real context.
+          Connect your tools through MCP, package your team's knowledge as skills, and every function gets
+          a place to work with AI in the context of what they actually do.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#teams">See it per team</a>
+          <a class="btn btn-line" href="#matrix">What's shipped vs. what you build</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><span class="n">macOS · Windows · Linux</span><span class="l">Desktop app, GA</span></div>
+          <div><span class="n">Every plan</span><span class="l">Free through Enterprise</span></div>
+          <div><span class="n">6 providers</span><span class="l">Model choice, plus BYOK</span></div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="streams" aria-hidden="true">
+          <div class="stream">
+            <span class="tag t-product">Product</span>
+            <p class="q">Turn this week's customer feedback into a feature brief</p>
+          </div>
+          <div class="stream">
+            <span class="tag t-design">Design</span>
+            <p class="q">Review the latest product requirements against our design system</p>
+          </div>
+          <div class="stream">
+            <span class="tag t-sales">Sales</span>
+            <p class="q">Prepare tomorrow's enterprise account brief</p>
+          </div>
+          <div class="stream">
+            <span class="tag t-finance">Finance</span>
+            <p class="q">Analyze this month's spending and flag the outliers</p>
+          </div>
+        </div>
+
+        <div class="core">
+          <div class="core-bar">
+            <i></i><i></i><i></i>
+            <span class="t">Copilot · sessions</span>
+          </div>
+          <div class="core-body">
+            <div class="core-row run"><span class="pip"></span> Fix the authentication issue <span class="who">autopilot</span></div>
+            <div class="core-row run"><span class="pip"></span> Draft the Q3 release notes <span class="who">plan</span></div>
+            <div class="core-row wait"><span class="pip"></span> Triage 42 incoming issues <span class="who">review</span></div>
+            <div class="core-row done"><span class="pip"></span> Summarize the pricing thread <span class="who">done</span></div>
+            <div class="core-row done"><span class="pip"></span> Weekly dependency report <span class="who">automation</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================== HONESTY BAND ============================== -->
+<div class="honesty">
+  <div class="wrap honesty-inner">
+    <div class="mark">⌖</div>
+    <p>
+      <strong>Read this first.</strong> GitHub positions the Copilot app as “the desktop home for agent-driven
+      development.” It is a developer tool. This page argues something broader: that its extensibility model
+      (MCP, plugins, skills, custom agents, canvases) makes it a credible shared AI layer for a whole company.
+      That argument is ours, not GitHub's. Every capability below is tagged
+      <span class="st st-ga">Generally available</span>
+      <span class="st st-prev">Public preview</span>
+      <span class="st st-build">You build it</span>
+      so you can tell what ships today from what you would assemble yourself. Sources are listed in the footer.
+    </p>
+  </div>
+</div>
+
+<!-- ============================== THE SHIFT ============================== -->
+<section class="section" id="shift">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">The shift</span>
+      <h2 class="h2">AI stopped being a place you ask questions.</h2>
+      <p class="body-lg">
+        The limit on useful AI was never the model. It was context. An assistant that cannot see your
+        repositories, your tickets, your documents or your data can only ever give you a well-written guess.
+      </p>
+    </div>
+
+    <div class="shift">
+      <div class="shift-step rv">
+        <span class="n">01 — Where it started</span>
+        <h3 class="h3">Individuals, in a chat box</h3>
+        <p>People write, research, summarize and brainstorm. It works, but every answer starts from zero because the tool knows nothing about your company.</p>
+      </div>
+      <div class="shift-step rv rv-d1">
+        <span class="n">02 — What changed</span>
+        <h3 class="h3">Context and tools arrived</h3>
+        <p>MCP gave models a standard way to reach real systems. Agents gained the ability to take multi-step action, not just produce text.</p>
+      </div>
+      <div class="shift-step rv rv-d2">
+        <span class="n">03 — Where it lands</span>
+        <h3 class="h3">A workspace, not an assistant</h3>
+        <p>Sessions that run in isolated branches, tools you connect yourself, knowledge you package once, and controls an administrator can actually enforce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TEAMS ============================== -->
+<section class="section invert" id="teams">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">One workspace. Every team.</span>
+      <h2 class="h2">The same platform, approached from five different jobs.</h2>
+      <p class="body-lg">
+        Engineering gets this out of the box. Everyone else gets it by connecting the systems they already
+        use. Each tab is honest about which is which.
+      </p>
+    </div>
+
+    <div class="team-tabs" role="tablist" aria-label="Team examples">
+      <button class="team-tab" role="tab" aria-selected="true" aria-controls="p-eng" id="t-eng">Engineering</button>
+      <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-prod" id="t-prod">Product</button>
+      <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-design" id="t-design">Design</button>
+      <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-sales" id="t-sales">Sales</button>
+      <button class="team-tab" role="tab" aria-selected="false" aria-controls="p-fin" id="t-fin">Finance</button>
+    </div>
+
+    <!-- Engineering -->
+    <div class="team-panel active" id="p-eng" role="tabpanel" aria-labelledby="t-eng">
+      <div class="panel-grid">
+        <div class="panel-lead">
+          <span class="st st-ga">Generally available</span>
+          <h3 class="h3" style="margin-top:14px">Native, no assembly required</h3>
+          <p>This is what the app was built for. Sessions run against your repositories with full awareness of issues, pull requests and history.</p>
+          <p class="panel-note">GitHub's own description: “a desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.”</p>
+        </div>
+        <div class="tasks">
+          <div class="task"><span class="ix">01</span><span class="tx">Start a session from an issue, a pull request, or a plain prompt<em>Each session runs in its own git worktree, your local repo, or a cloud sandbox</em></span></div>
+          <div class="task"><span class="ix">02</span><span class="tx">Run several sessions in parallel across repositories<em>Separate branches, no file conflicts between agents</em></span></div>
+          <div class="task"><span class="ix">03</span><span class="tx">Choose the mode per task<em>Interactive waits for you, Plan proposes first, Autopilot runs autonomously</em></span></div>
+          <div class="task"><span class="ix">04</span><span class="tx">Review the diff, validate in the built-in terminal and browser, open the PR<em>Uses your existing checks and merge requirements</em></span></div>
+          <div class="task"><span class="ix">05</span><span class="tx">Let Agent Merge watch CI and merge when your conditions are met<em>Tracks required reviewers and addresses failing checks</em></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product -->
+    <div class="team-panel" id="p-prod" role="tabpanel" aria-labelledby="t-prod">
+      <div class="panel-grid">
+        <div class="panel-lead">
+          <span class="st st-ga">Documented by GitHub</span>
+          <h3 class="h3" style="margin-top:14px">Already an official use case</h3>
+          <p>GitHub has published that Copilot is used by product managers, program managers, scrum masters, community managers and quality analysts, not only engineers.</p>
+          <p class="panel-note">The official examples stay close to the GitHub workflow: drafting and reformatting Markdown for issues and discussions, reviewing text for clarity and style. Everything beyond that is your own extension work.</p>
+        </div>
+        <div class="tasks">
+          <div class="task"><span class="ix">01</span><span class="tx">Turn a stream of customer feedback into a written requirement<em>Issues and discussions are already native context</em></span></div>
+          <div class="task"><span class="ix">02</span><span class="tx">Analyze open issues and requests for recurring themes<em>An issue triage canvas can summarize top themes and pain points</em></span></div>
+          <div class="task"><span class="ix">03</span><span class="tx">Research a feature across repositories and past pull requests<em>Delegate to the built-in research and explore subagents</em></span></div>
+          <div class="task"><span class="ix">04</span><span class="tx">Draft a proposal in a markdown canvas the agent keeps updating<em>Bidirectional: you edit it, the agent edits it</em></span></div>
+          <div class="task"><span class="ix">05</span><span class="tx">Pull in your roadmap docs as a Copilot Space<em>Curated context you assemble once and reuse</em></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <div class="team-panel" id="p-design" role="tabpanel" aria-labelledby="t-design">
+      <div class="panel-grid">
+        <div class="panel-lead">
+          <span class="st st-build">You build it</span>
+          <h3 class="h3" style="margin-top:14px">Possible, but it's your integration</h3>
+          <p>Nothing here ships as a design feature. It becomes possible because MCP lets you connect a tool, and skills let you package how your team works.</p>
+          <p class="panel-note">GitHub documents MCP generically and ships its own GitHub MCP server. It does not publish or endorse design-tool connectors. Treat any such server as community-built and review it before you install it.</p>
+        </div>
+        <div class="tasks">
+          <div class="task"><span class="ix">01</span><span class="tx">Review a product brief against accessibility and content standards<em>Package the standards once as a SKILL.md the agent loads automatically</em></span></div>
+          <div class="task"><span class="ix">02</span><span class="tx">Cluster user feedback into themes before a design review<em>Feedback source connected through an MCP server</em></span></div>
+          <div class="task"><span class="ix">03</span><span class="tx">Check a spec against the design system's component inventory<em>Design-system docs live in a repo the agent can already read</em></span></div>
+          <div class="task"><span class="ix">04</span><span class="tx">Keep a living critique document in a canvas<em>Shared surface both you and the agent write to</em></span></div>
+          <div class="task"><span class="ix">05</span><span class="tx">Define a "design-reviewer" custom agent with a fixed tool set<em>An agent profile in .github/agents/</em></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sales -->
+    <div class="team-panel" id="p-sales" role="tabpanel" aria-labelledby="t-sales">
+      <div class="panel-grid">
+        <div class="panel-lead">
+          <span class="st st-build">You build it</span>
+          <h3 class="h3" style="margin-top:14px">The connector is on you</h3>
+          <p>A CRM is reachable the same way any other system is: an MCP server exposing the records and queries you allow. The workflow around it is a skill you write.</p>
+          <p class="panel-note">There is no GitHub-published CRM integration. If your CRM has no MCP server you trust, this is engineering work before it is a sales workflow.</p>
+        </div>
+        <div class="tasks">
+          <div class="task"><span class="ix">01</span><span class="tx">Research an account before a call<em>Account data via MCP, public signals via a web-capable tool</em></span></div>
+          <div class="task"><span class="ix">02</span><span class="tx">Produce a meeting brief in your team's exact format<em>The format is the skill, so every brief comes out the same</em></span></div>
+          <div class="task"><span class="ix">03</span><span class="tx">Summarize the last six months of account activity<em>Email, calendar and notes, each behind its own connected server</em></span></div>
+          <div class="task"><span class="ix">04</span><span class="tx">Analyze pipeline data and flag what moved<em>Query through a connected data source, not a pasted spreadsheet</em></span></div>
+          <div class="task"><span class="ix">05</span><span class="tx">Schedule the brief to run the morning of every meeting<em>An automation on a daily trigger</em></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Finance -->
+    <div class="team-panel" id="p-fin" role="tabpanel" aria-labelledby="t-fin">
+      <div class="panel-grid">
+        <div class="panel-lead">
+          <span class="st st-build">You build it</span>
+          <h3 class="h3" style="margin-top:14px">Recurring analysis is the real prize</h3>
+          <p>Finance work is mostly the same analysis on a schedule. Automations plus a connected data source is a better fit than a chat window.</p>
+          <p class="panel-note">Automations require a private or internal repository and a Copilot Pro plan or above. They are not available on public repositories or on Copilot Free.</p>
+        </div>
+        <div class="tasks">
+          <div class="task"><span class="ix">01</span><span class="tx">Run the same month-end analysis without rebuilding it<em>Saved as an automation on a weekly or CRON trigger</em></span></div>
+          <div class="task"><span class="ix">02</span><span class="tx">Summarize a long report into the sections your committee expects<em>Section structure encoded as a skill</em></span></div>
+          <div class="task"><span class="ix">03</span><span class="tx">Identify trends across periods and explain the movement<em>Database or warehouse reached through an MCP server</em></span></div>
+          <div class="task"><span class="ix">04</span><span class="tx">Work in a spreadsheet-style canvas rather than a chat transcript<em>Canvases are built for artifacts, not conversation</em></span></div>
+          <div class="task"><span class="ix">05</span><span class="tx">Keep the model inside your own boundary<em>Point the app at Azure OpenAI, Ollama or a local endpoint</em></span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== CONNECT / MCP ============================== -->
+<section class="section" id="connect">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">Connect AI to the work</span>
+      <h2 class="h2">Give AI the context to do real work.</h2>
+      <p class="body-lg">
+        MCP is an open standard for connecting models to data sources and tools. Copilot supports local
+        servers that run on your machine and remote servers over HTTP. What sits on the outside of that
+        diagram is your decision, and your responsibility.
+      </p>
+    </div>
+
+    <div class="hub rv">
+      <div class="hub-grid">
+
+        <div class="hub-col left">
+          <div class="hub-node"><span class="ic">◧</span> Repositories, issues, pull requests <span class="st st-ga">Native</span></div>
+          <div class="hub-node"><span class="ic">◈</span> GitHub MCP server <span class="st st-ga">First-party</span></div>
+          <div class="hub-node"><span class="ic">▤</span> Copilot Spaces, curated knowledge <span class="st st-ga">Native</span></div>
+          <div class="hub-node"><span class="ic">⬡</span> Plugins: agents, skills, hooks <span class="st st-ga">Installable</span></div>
+          <div class="hub-node"><span class="ic">⌸</span> MCP Registry <span class="st st-prev">Preview</span></div>
+        </div>
+
+        <div class="hub-center">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          <h3 class="h4">Copilot app</h3>
+          <p>Local and remote MCP, in one workspace</p>
+        </div>
+
+        <div class="hub-col right">
+          <div class="hub-node"><span class="ic">▣</span> CRM and customer records <span class="st st-build">You connect</span></div>
+          <div class="hub-node"><span class="ic">◉</span> Analytics and warehouses <span class="st st-build">You connect</span></div>
+          <div class="hub-node"><span class="ic">✎</span> Design and documentation tools <span class="st st-build">You connect</span></div>
+          <div class="hub-node"><span class="ic">◇</span> Project management <span class="st st-build">You connect</span></div>
+          <div class="hub-node"><span class="ic">⬢</span> Internal systems you wrote <span class="st st-build">You connect</span></div>
+        </div>
+
+      </div>
+
+      <p class="hub-foot">
+        <strong>Be precise about the boundary.</strong> The left column is GitHub's. The right column is not.
+        GitHub documents the MCP mechanism and ships the GitHub MCP server; it does not publish or endorse
+        connectors for specific CRM, analytics or design products. Anything on the right is community-built
+        or written by you, and should be reviewed like any other dependency.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== AGENT FLOW ============================== -->
+<section class="section" id="agent">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">From assistant to agent</span>
+      <h2 class="h2">From asking AI questions to getting work done.</h2>
+      <p class="body-lg">
+        An assistant returns text. An agent plans, calls tools, produces an artifact, and hands it back in a
+        form you can check. The difference is whether anything actually changed when it finished.
+      </p>
+    </div>
+
+    <div class="aflow">
+      <div class="astep rv"><span class="n">1</span><h4 class="h4">Task</h4><p>From an issue, a pull request, a schedule, or a sentence you typed.</p></div>
+      <div class="astep rv rv-d1"><span class="n">2</span><h4 class="h4">Plan</h4><p>In <code>Plan</code> mode the agent proposes its approach and waits for approval before touching anything.</p></div>
+      <div class="astep rv rv-d2"><span class="n">3</span><h4 class="h4">Tools</h4><p>Reads the repo, calls MCP servers, runs commands, loads any skill relevant to the task.</p></div>
+      <div class="astep rv rv-d3"><span class="n">4</span><h4 class="h4">Artifact</h4><p>A pull request, a canvas, a document, a report. Something durable, not a chat message.</p></div>
+      <div class="astep rv rv-d4"><span class="n">5</span><h4 class="h4">Handback</h4><p>You review the diff or the canvas. Work continues in the open, in the systems you already use.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== YOUR AI LAYER ============================== -->
+<section class="section" id="layer">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">Your company's AI layer</span>
+      <h2 class="h2">Customization your teams own. Controls your administrators keep.</h2>
+      <p class="body-lg">
+        The reason this can be a company-wide layer rather than five disconnected AI subscriptions is that
+        the customization is version-controlled and the governance is real.
+      </p>
+    </div>
+
+    <div class="gov">
+      <div class="gov-card rv">
+        <h4 class="h4">Skills <span class="st st-ga">Shipped</span></h4>
+        <p>Folders of instructions, scripts and resources that Copilot loads when relevant. A <code>SKILL.md</code> with a name and description, plus whatever supporting files you need. They live in <code>.github/skills/</code> for a project or <code>~/.copilot/skills/</code> for a person, and they work across the app, the CLI, the cloud agent, code review and VS&nbsp;Code.</p>
+      </div>
+      <div class="gov-card rv rv-d1">
+        <h4 class="h4">Custom agents <span class="st st-ga">Shipped</span></h4>
+        <p>Specialized versions of the agent that follow your standards and use a defined tool set. Markdown profiles in <code>.github/agents/</code> per repository, or in the organization's <code>.github</code> repository. Enterprises can designate a <code>.github-private</code> repository and lock it with rulesets so only enterprise owners can change agent profiles.</p>
+      </div>
+      <div class="gov-card rv rv-d2">
+        <h4 class="h4">Plugins <span class="st st-ga">Shipped</span></h4>
+        <p>One installable package that bundles agents, skills, hooks and integrations behind a <code>plugin.json</code> manifest. This is how a capability stops being one person's local setup and becomes something the whole company installs.</p>
+      </div>
+      <div class="gov-card rv rv-d3">
+        <h4 class="h4">Canvases <span class="st st-ga">Shipped</span></h4>
+        <p>Shared interactive surfaces for a work artifact: a plan, a triage board, a browser session, a release checklist, a dashboard. Bidirectional, so the agent updates the canvas while it works and you edit the same surface.</p>
+      </div>
+      <div class="gov-card rv">
+        <h4 class="h4">MCP governance <span class="st st-ga">GA</span> <span class="st st-prev">Registry in preview</span></h4>
+        <p>Administrators allowlist or deny MCP servers through <code>managed-settings.json</code>, matched by name, URL or command, failing closed and overridable per enterprise team. A self-hosted MCP registry also exists, in public preview, with weaker enforcement. Note the scope: the "MCP servers in Copilot" policy governs Copilot Business and Enterprise members only, not Free, Pro, Pro+ or Max users.</p>
+      </div>
+      <div class="gov-card rv rv-d1">
+        <h4 class="h4">Models and residency <span class="st st-ga">Auto GA</span> <span class="st st-prev">BYOK preview</span></h4>
+        <p>Models from OpenAI, Anthropic, Google, xAI, Moonshot AI and Microsoft, selectable per session alongside Auto model selection. Administrators can restrict which models are available, including data-residency and FedRAMP restrictions. Bring-your-own-key is in public preview in the app and supports Azure OpenAI, Microsoft Foundry, Ollama, LM Studio and any OpenAI-compatible endpoint.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MATRIX ============================== -->
+<section class="section" id="matrix">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">What's real</span>
+      <h2 class="h2">Shipped, in preview, or your weekend project.</h2>
+      <p class="body-lg">
+        The single most useful table on this page. Plan against it before you promise anything internally.
+      </p>
+    </div>
+
+    <div class="matrix rv">
+      <div class="mx-scroll">
+        <table class="mx">
+          <thead>
+            <tr><th style="width:24%">Capability</th><th style="width:19%">Status</th><th>Detail worth knowing</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="c1">Copilot app</td><td><span class="st st-ga">Generally available</span></td><td>Desktop app for macOS, Windows and Linux. All plans include the CLI and the app. On Business and Enterprise an administrator must have the Copilot CLI policy enabled.</td></tr>
+            <tr><td class="c1">Parallel agent sessions</td><td><span class="st st-ga">Generally available</span></td><td>Each session in its own git worktree or directly in your local repository, grouped by repository.</td></tr>
+            <tr><td class="c1">Cloud &amp; local sandboxes</td><td><span class="st st-prev">Public preview</span></td><td>GitHub's docs state explicitly that these are in public preview and subject to change.</td></tr>
+            <tr><td class="c1">MCP servers</td><td><span class="st st-ga">Generally available</span></td><td>Local stdio servers and remote HTTP servers. The GitHub MCP server is first-party.</td></tr>
+            <tr><td class="c1">MCP Registry</td><td><span class="st st-prev">Public preview</span></td><td>A curated list of servers from partners and the community. Self-hosted registries are also preview.</td></tr>
+            <tr><td class="c1">MCP allowlisting</td><td><span class="st st-ga">Generally available</span></td><td>Via <code>managed-settings.json</code>. Fails closed. Governs Business and Enterprise members only.</td></tr>
+            <tr><td class="c1">Skills, custom agents, plugins</td><td><span class="st st-ga">Shipped</span></td><td>Documented and working across the app, CLI, cloud agent and VS Code. No preview banner on the docs.</td></tr>
+            <tr><td class="c1">Canvases</td><td><span class="st st-ga">Shipped</span></td><td>Shipped with the app's GA. Kanban boards, triage boards, markdown and document canvases.</td></tr>
+            <tr><td class="c1">Automations</td><td><span class="st st-ga">Generally available</span></td><td>Manual, hourly, daily, weekly, CRON (local only), issue events and pull request events. Requires a private or internal repository and Pro or above. Not on Free, not on public repositories.</td></tr>
+            <tr><td class="c1">Auto model selection</td><td><span class="st st-ga">Generally available</span></td><td>Auto tiers (Efficiency, Balance, Intelligence) exist in VS Code, the CLI and the app, but not in Copilot Chat on github.com.</td></tr>
+            <tr><td class="c1">Bring your own model</td><td><span class="st st-prev">Public preview</span></td><td>In the app specifically. You do not need a Copilot plan if you bring your own provider, only a GitHub account.</td></tr>
+            <tr><td class="c1">Business-system connectors</td><td><span class="st st-build">You build it</span></td><td>No GitHub-published CRM, analytics or design connectors. Community-built or written by you, and reviewed accordingly.</td></tr>
+            <tr><td class="c1">Non-engineering positioning</td><td><span class="st st-off">Not GitHub's claim</span></td><td>GitHub has published that PMs, program managers, security staff, scrum masters, community managers and QA use Copilot. It has not positioned the app for sales, finance, marketing or HR. That extension is the argument of this page.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CASES ============================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="micro">Real workflows</span>
+      <h2 class="h2">Three that hold up under scrutiny.</h2>
+      <p class="body-lg">
+        Not demos. Each one is assembled from capabilities that exist, with the assembly work stated plainly.
+      </p>
+    </div>
+
+    <div class="cases">
+      <div class="card case rv">
+        <div class="top"><span class="role t-eng">Engineering</span><span class="st st-ga">Native today</span></div>
+        <h4 class="h4">Nightly test repair</h4>
+        <p>An automation checks the default branch for failing tests each night, attempts a fix, and opens a draft pull request. Nobody starts their morning by finding out what broke.</p>
+        <div class="chain"><span class="chip">Automation</span><span class="chip">Cloud agent</span><span class="chip">Draft PR</span></div>
+      </div>
+
+      <div class="card case rv rv-d1">
+        <div class="top"><span class="role t-product">Product</span><span class="st st-ga">Native today</span></div>
+        <h4 class="h4">Standing issue triage</h4>
+        <p>Incoming issues are labelled by content on a schedule, and a triage canvas keeps a live summary of the top themes and pain points for the week's review.</p>
+        <div class="chain"><span class="chip">Automation</span><span class="chip">Issue events</span><span class="chip">Canvas</span></div>
+      </div>
+
+      <div class="card case rv rv-d2">
+        <div class="top"><span class="role t-sales">Go-to-market</span><span class="st st-build">You build it</span></div>
+        <h4 class="h4">Morning account brief</h4>
+        <p>A daily automation reads tomorrow's calendar, pulls the account record over MCP, and writes the brief in your team's fixed format because the format is a skill, not a prompt someone retypes.</p>
+        <div class="chain"><span class="chip">MCP server</span><span class="chip">Skill</span><span class="chip">Automation</span><span class="chip">Your integration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINAL CTA ============================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="final rv">
+      <span class="eyebrow"><span class="led"></span> One place to work with AI</span>
+      <h2 class="h2" style="margin-top:22px">Your tools. Your knowledge. Your workflows. One AI workspace.</h2>
+      <p class="body-lg">
+        Start where it already works: engineering, today, with no integration effort. Then connect one system
+        that matters to another team and see whether the second workflow is easier to build than the first.
+        That is the honest test of whether this becomes your company's AI layer.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="https://docs.github.com/en/copilot/how-tos/github-copilot-app">Get the Copilot app</a>
+        <a class="btn btn-line" href="https://docs.github.com/en/copilot/concepts/enterprise/mcp-management">Read the MCP governance docs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <p style="margin-bottom:14px">
+        <strong style="color:var(--fg-dim)">Independent, unofficial, and not affiliated with GitHub.</strong>
+      </p>
+      <p>
+        Capability statements were taken from GitHub's own documentation and changelog in September 2026 and
+        tagged by release stage. The broader argument, that the Copilot app can serve as a company-wide AI
+        layer, is an interpretation and is labelled as such throughout. Product capabilities and plan pricing
+        change often. Verify against
+        <a href="https://docs.github.com/copilot">docs.github.com/copilot</a> before making a decision.
+      </p>
+    </div>
+    <div class="sources">
+      <span class="micro">Primary sources</span>
+      <a href="https://docs.github.com/en/copilot/how-tos/github-copilot-app">The GitHub Copilot app</a>
+      <a href="https://docs.github.com/en/copilot/how-tos/github-copilot-app/agent-sessions">Agent sessions</a>
+      <a href="https://docs.github.com/en/copilot/concepts/enterprise/mcp-management">MCP management</a>
+      <a href="https://docs.github.com/en/copilot/concepts/agents/about-plugins">About plugins</a>
+      <a href="https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions">Canvas extensions</a>
+      <a href="https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations">About automations</a>
+      <a href="https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-custom-agents">Custom agents</a>
+      <a href="https://docs.github.com/en/copilot/how-tos/github-copilot-app/use-byok-models">BYOK models</a>
+      <a href="https://docs.github.com/en/copilot/get-started/plans">Copilot plans</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

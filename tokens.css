@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Design system — GitHub Copilot workspace landing page
+   Editorial / premium / high contrast. Dark primary, light inversions.
+   ========================================================================== */
+
+:root{
+  /* --- surfaces (dark, primary) --- */
+  --ink-900:#05060a;
+  --ink-850:#070910;
+  --ink-800:#0a0d14;
+  --ink-700:#0f131c;
+  --ink-600:#141924;
+  --ink-500:#1a2030;
+  --ink-line:#1f2637;
+  --ink-line-2:#2a3346;
+
+  /* --- surfaces (light inversion) --- */
+  --paper:#f6f7f9;
+  --paper-2:#ecedf1;
+  --paper-line:#d9dce3;
+  --paper-ink:#0a0d14;
+  --paper-dim:#5b6376;
+
+  /* --- type --- */
+  --fg:#f2f5fa;
+  --fg-dim:#98a2b8;
+  --fg-faint:#69738a;
+
+  /* --- accents --- */
+  --a1:#7aa2ff;   /* blue   */
+  --a2:#b98cff;   /* violet */
+  --a3:#5ee0c0;   /* teal   */
+  --a4:#ffb86b;   /* amber  */
+  --a5:#ff8fa3;   /* rose   */
+
+  --grad-1:linear-gradient(100deg,var(--a1),var(--a2));
+  --grad-2:linear-gradient(120deg,var(--a3),var(--a1));
+
+  /* --- geometry --- */
+  --r-xs:8px;
+  --r-sm:12px;
+  --r:16px;
+  --r-lg:22px;
+  --r-xl:30px;
+  --max:1240px;
+  --gutter:28px;
+
+  /* --- motion --- */
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+
+  /* --- fonts --- */
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink-900);color:var(--fg);
+  font:400 16px/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* --- layout --- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.wrap-narrow{max-width:900px;margin:0 auto;padding:0 var(--gutter)}
+
+/* --- type scale --- */
+.display{
+  font-size:clamp(40px,6.4vw,84px);line-height:.98;letter-spacing:-.045em;font-weight:680;
+}
+.h2{font-size:clamp(30px,4.2vw,52px);line-height:1.06;letter-spacing:-.038em;font-weight:660}
+.h3{font-size:clamp(21px,2.2vw,27px);line-height:1.2;letter-spacing:-.025em;font-weight:620}
+.h4{font-size:17px;line-height:1.3;letter-spacing:-.015em;font-weight:620}
+.body-lg{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--fg-dim)}
+.body{font-size:16px;line-height:1.65;color:var(--fg-dim)}
+.small{font-size:14px;line-height:1.6;color:var(--fg-faint)}
+.micro{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--fg-faint);font-weight:500;
+}
+.grad-text{background:var(--grad-1);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* --- rules & eyebrows --- */
+.rule{height:1px;background:var(--ink-line);border:0;margin:0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--fg-dim);border:1px solid var(--ink-line);background:rgba(20,25,36,.6);
+  border-radius:999px;padding:7px 14px;
+}
+.eyebrow .led{width:5px;height:5px;border-radius:50%;background:var(--a3);box-shadow:0 0 0 3px rgba(94,224,192,.14)}
+
+/* --- buttons --- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;
+  font-size:15px;font-weight:560;border:1px solid transparent;cursor:pointer;
+  transition:transform .22s var(--ease),background .22s var(--ease),border-color .22s var(--ease),box-shadow .22s var(--ease),color .22s var(--ease);
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-solid{background:var(--fg);color:var(--ink-900)}
+.btn-solid:hover{background:#fff;box-shadow:0 14px 40px -16px rgba(242,245,250,.5)}
+.btn-line{border-color:var(--ink-line-2);color:var(--fg);background:rgba(255,255,255,.02)}
+.btn-line:hover{border-color:#3c465c;background:rgba(255,255,255,.05)}
+
+/* --- sections --- */
+.section{padding:clamp(72px,9vw,128px) 0;position:relative}
+.section + .section{border-top:1px solid var(--ink-line)}
+.section-head{max-width:740px;margin-bottom:clamp(40px,5vw,64px)}
+.section-head .micro{display:block;margin-bottom:16px}
+.section-head .h2{margin:0 0 18px}
+.section-head .body-lg{margin:0}
+
+/* light inversion band */
+.section.invert{background:var(--paper);color:var(--paper-ink);border-top-color:var(--paper-line)}
+.section.invert .body,.section.invert .body-lg{color:var(--paper-dim)}
+.section.invert .micro{color:#7c8497}
+.section.invert .rule{background:var(--paper-line)}
+
+/* --- cards --- */
+.card{
+  border:1px solid var(--ink-line);border-radius:var(--r);
+  background:linear-gradient(180deg,var(--ink-700),rgba(10,13,20,.55));
+  transition:transform .32s var(--ease),border-color .32s var(--ease),box-shadow .32s var(--ease);
+}
+.card:hover{transform:translateY(-4px);border-color:var(--ink-line-2);box-shadow:0 30px 60px -36px rgba(0,0,0,.95)}
+
+/* --- motion primitives --- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}
+.rv-d2{transition-delay:.16s}
+.rv-d3{transition-delay:.24s}
+.rv-d4{transition-delay:.32s}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  *{animation:none !important}
+}
+
+/* --- utility --- */
+.stack-sm > * + *{margin-top:8px}
+.stack > * + *{margin-top:16px}
+.stack-lg > * + *{margin-top:28px}
+.center{text-align:center}
+.mono{font-family:var(--mono)}
